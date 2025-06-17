@@ -172,6 +172,73 @@ ul.skills li {
   background-color: var(--supporting-cream);
 }
 
+/* Custom styles for schedule page */
+.calendly-inline-widget {
+  border-radius: var(--section-radius);
+  box-shadow: var(--section-shadow);
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+/* Style the consultation info cards */
+.consultation-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.consultation-info .card {
+  margin-bottom: 0;
+}
+
+.consultation-info .card h3 {
+  color: var(--primary-navy);
+  border-bottom: 1px solid var(--secondary-light-gray);
+  padding-bottom: 0.5rem;
+}
+
+.consultation-info .card ul {
+  margin: 1rem 0;
+  padding-left: 1.2rem;
+}
+
+.consultation-info .card li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/* Responsive adjustments for Calendly widget */
+@media (max-width: 768px) {
+  .calendly-inline-widget {
+    height: 600px;
+    min-width: 280px;
+  }
+}
+
+/* Style the popup button */
+.calendly-popup-btn {
+  background-color: var(--accent-teal);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.calendly-popup-btn:hover {
+  background-color: #0f766e;
+  text-decoration: none;
+  color: white;
+}
+
 /* Responsive section padding and margin */
 @media (max-width: 800px) {
   section {

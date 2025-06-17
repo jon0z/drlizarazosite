@@ -34,19 +34,51 @@
   <main class="main-content">
     <section aria-labelledby="appointment-heading">
       <header>
-        <h2 id="appointment-heading">Appointment Request Form</h2>
+        <h2 id="appointment-heading">Schedule Your Consultation</h2>
+        <p>Book a consultation session with Dr. Zully Lizarazo. Select a convenient time from the available slots below.</p>
       </header>
-      <form>
-        <div>
-          <label for="name">Name:</label><br>
-          <input type="text" id="name" name="name" required><br><br>
-          <label for="email">Email:</label><br>
-          <input type="email" id="email" name="email" required><br><br>
-          <label for="message">Message:</label><br>
-          <textarea id="message" name="message" rows="4" required></textarea><br><br>
-          <button type="submit">Submit</button>
+      
+      <!-- Calendly inline widget begin -->
+      <div class="calendly-inline-widget" 
+           data-url="https://calendly.com/zlizarazob/30min" 
+           style="min-width:320px;height:700px;"></div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      <!-- Calendly inline widget end -->
+      
+      <!-- Alternative: Button to open Calendly popup -->
+      <div style="margin-top: 2rem; text-align: center;">
+        <p><strong>Prefer a popup window?</strong></p>
+        <a href="" 
+           onclick="Calendly.initPopupWidget({url: 'https://calendly.com/zlizarazob/30min'}); return false;"
+           class="download-btn">
+          <i class="fas fa-calendar-alt"></i> Schedule Consultation
+        </a>
+      </div>
+      
+      <!-- Information about the consultation -->
+      <div class="consultation-info">
+        <div class="card">
+          <h3><i class="fas fa-info-circle text-accent-teal"></i> What to Expect</h3>
+          <ul>
+            <li><strong>Duration:</strong> 50-minute initial consultation</li>
+            <li><strong>Format:</strong> In-person or telehealth options available</li>
+            <li><strong>Preparation:</strong> Please arrive 10 minutes early for paperwork</li>
+            <li><strong>Cancellation:</strong> 24-hour notice required for rescheduling</li>
+          </ul>
         </div>
-      </form>
+        
+        <div class="card">
+          <h3><i class="fas fa-clipboard-list text-accent-teal"></i> Before Your Appointment</h3>
+          <p>Please have the following ready:</p>
+          <ul>
+            <li>Insurance information (if applicable)</li>
+            <li>List of current medications</li>
+            <li>Any previous mental health records</li>
+            <li>Specific concerns or goals you'd like to discuss</li>
+          </ul>
+        </div>
+      </div>
+      
     </section>
 
     <footer style="text-align:center; margin-top: 4rem;">
