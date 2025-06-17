@@ -1,14 +1,34 @@
 :root {
-  --bg-color: #f9fafb;
-  --text-color: #111827;
-  --accent-color: #2563eb;
+  /* New Color Palette */
+  
+  /* Primary Colors */
+  --primary-navy: #1e3a5f;      /* Main brand color - trust, stability, professionalism */
+  --primary-white: #fafafa;     /* Clean, clinical feel without being sterile */
+  
+  /* Secondary Colors */
+  --secondary-gray: #6b7280;    /* Body text and subtle elements */
+  --secondary-light-gray: #e5e7eb; /* Backgrounds and borders */
+  
+  /* Accent/Highlight Colors */
+  --accent-teal: #0d9488;       /* Call-to-action buttons and important links */
+  --accent-gold: #d97706;       /* Highlights and important information (sparingly) */
+  
+  /* Supporting Colors */
+  --supporting-charcoal: #374151; /* Headings and emphasis */
+  --supporting-light-blue: #e0f2fe; /* Subtle background sections */
+  --supporting-cream: #fffbeb;   /* Alternative light background for warmth */
+  
+  /* Updated Legacy Variables with New Palette */
+  --bg-color: var(--primary-white);
+  --text-color: var(--secondary-gray);
+  --accent-color: var(--primary-navy);
   --card-bg: #ffffff;
-  --border-color: #e5e7eb;
+  --border-color: var(--secondary-light-gray);
   --section-padding: 2rem;
   --section-margin: 2.5rem;
   --section-bg: #fff;
   --section-radius: 12px;
-  --section-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  --section-shadow: 0 2px 8px rgba(30, 58, 95, 0.08); /* Navy-based shadow */
 }
 
 body {
@@ -39,11 +59,12 @@ header {
 header h1 {
   margin: 0;
   font-size: 2.5rem;
+  color: var(--supporting-charcoal);
 }
 
 header p {
   margin: 0.5rem 0;
-  color: #4b5563;
+  color: var(--secondary-gray);
 }
 
 /* Advanced section styling */
@@ -59,8 +80,8 @@ section {
 }
 
 section h2 {
-  color: var(--accent-color);
-  border-bottom: 2px solid var(--accent-color);
+  color: var(--primary-navy);
+  border-bottom: 2px solid var(--primary-navy);
   padding-bottom: 0.25rem;
   margin-bottom: 1rem;
   font-size: clamp(1.3rem, 2vw, 2rem);
@@ -79,11 +100,12 @@ section h2 {
 .card h3 {
   margin-top: 0;
   margin-bottom: 0.25rem;
+  color: var(--supporting-charcoal);
 }
 
 .card .meta {
   font-size: 0.9rem;
-  color: #6b7280;
+  color: var(--secondary-gray);
 }
 
 ul.skills {
@@ -95,8 +117,8 @@ ul.skills {
 }
 
 ul.skills li {
-  background-color: #e0f2fe;
-  color: #0369a1;
+  background-color: var(--supporting-light-blue);
+  color: var(--primary-navy);
   padding: 0.3rem 0.75rem;
   border-radius: 999px;
   font-size: 0.85rem;
@@ -113,6 +135,41 @@ ul.skills li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Color utility classes for highlights and special elements */
+.text-accent-gold {
+  color: var(--accent-gold);
+}
+
+.bg-accent-gold {
+  background-color: var(--accent-gold);
+  color: white;
+}
+
+.text-accent-teal {
+  color: var(--accent-teal);
+}
+
+.bg-accent-teal {
+  background-color: var(--accent-teal);
+  color: white;
+}
+
+.text-primary-navy {
+  color: var(--primary-navy);
+}
+
+.text-charcoal {
+  color: var(--supporting-charcoal);
+}
+
+.bg-light-blue {
+  background-color: var(--supporting-light-blue);
+}
+
+.bg-cream {
+  background-color: var(--supporting-cream);
 }
 
 /* Responsive section padding and margin */
@@ -168,7 +225,7 @@ ul.skills li {
 
 .download-btn {
   display: inline-block;
-  background-color: var(--accent-color);
+  background-color: var(--accent-teal);
   color: white;
   padding: 0.75rem 1.5rem;
   text-decoration: none;
@@ -178,21 +235,21 @@ ul.skills li {
 }
 
 .download-btn:hover {
-  background-color: #1e40af;
+  background-color: #0f766e; /* Darker teal on hover */
 }
 
 .social-icon {
-  color: var(--accent-color);
+  color: var(--accent-teal);
   text-decoration: none;
   margin: 0 0.25rem;
 }
 
 .social-icon:hover {
-  color: #0a66c2; /* LinkedIn brand color */
+  color: var(--primary-navy);
 }
 
 nav a {
-  color: var(--accent-color);
+  color: var(--primary-navy);
   margin: 0 0.5rem;
   text-decoration: none;
   font-weight: 500;
@@ -229,12 +286,12 @@ footer .social-icon {
 /* Sidebar styles for navigation and profile */
 .sidebar {
   width: 320px;
-  background: #f3f4f6;
+  background: var(--supporting-cream);
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-right: 1px solid #e5e7eb;
+  border-right: 1px solid var(--secondary-light-gray);
   min-height: 100vh;
   box-sizing: border-box;
 }
@@ -245,18 +302,19 @@ footer .social-icon {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1rem;
-  border: 3px solid #e5e7eb;
+  border: 3px solid var(--primary-navy);
 }
 
 .sidebar h1 {
   font-size: 1.4rem;
   margin: 0.5rem 0 0.2rem 0;
   text-align: center;
+  color: var(--supporting-charcoal);
 }
 
 .sidebar p {
   font-size: 1rem;
-  color: #555;
+  color: var(--secondary-gray);
   margin: 0 0 1rem 0;
   text-align: center;
 }
@@ -270,7 +328,7 @@ footer .social-icon {
 .sidebar nav a {
   display: block;
   padding: 0.5rem 0;
-  color: #333;
+  color: var(--supporting-charcoal);
   text-decoration: none;
   font-weight: 500;
   transition: background 0.2s;
@@ -278,12 +336,13 @@ footer .social-icon {
 }
 
 .sidebar nav a:hover {
-  background: #e5e7eb;
+  background: var(--supporting-light-blue);
+  color: var(--primary-navy);
 }
 
 .sidebar .social-icon {
   margin: 0 0.5rem;
-  color: #0077b5;
+  color: var(--accent-teal);
   text-decoration: none;
 }
 
@@ -296,7 +355,7 @@ footer .social-icon {
   top: 0;
   z-index: 999;
   height: 100vh;
-  background: #f3f4f6;
+  background: var(--supporting-cream);
 }
 
 /* Show sidebar when not collapsed */
@@ -309,7 +368,7 @@ footer .social-icon {
     height: 100vh;
     width: 100%;
     transition: transform 0.3s ease;
-    background: #f3f4f6;
+    background: var(--supporting-cream);
     transform: translateX(0);
   }
   .sidebar.collapsed {
