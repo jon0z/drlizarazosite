@@ -178,6 +178,7 @@ ul.skills li {
   box-shadow: var(--section-shadow);
   overflow: hidden;
   margin: 1rem 0;
+  width: 100%;
 }
 
 /* Style the consultation info cards */
@@ -190,6 +191,7 @@ ul.skills li {
 
 .consultation-info .card {
   margin-bottom: 0;
+  width: 100%;
 }
 
 .consultation-info .card h3 {
