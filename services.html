@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Dr. Zully Lizarazo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <button id="menu-toggle" aria-label="Open navigation" style="display:none;position:fixed;top:1rem;left:1rem;z-index:1000;font-size:2rem;background:none;border:none;cursor:pointer;">
+    <i class="fas fa-bars"></i>
+  </button>
+  <aside class="sidebar" id="sidebar">
+    <img src="avatar.jpg" alt="Dr. Zully Lizarazo" class="avatar" />
+    <h1>Dr. Zully Lizarazo</h1>
+    <p>Clinical Psychologist</p>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html" aria-current="page">Services</a>
+      <a href="schedule.html">Book Consult</a>
+    </nav>
+    <div>
+      <a href="https://linkedin.com/in/drzlizarazo" target="_blank" class="social-icon" title="LinkedIn">
+        <i class="fab fa-linkedin fa-lg"></i>
+      </a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <section aria-labelledby="services-heading">
+      <header>
+        <h2 id="services-heading">Forensic & Clinical Services</h2>
+      </header>
+      <p>
+        Dr. Zully Lizarazo provides comprehensive forensic evaluations for adults involved in all stages of criminal and civil proceedings. Her expertise covers a wide range of psychological assessments and consultation services, including but not limited to:
+      </p>
+      <div class="card-list">
+        <article>
+          <h3>Psychological Evaluations</h3>
+          <ul>
+            <li>Competency to stand trial evaluations</li>
+            <li>Insanity assessments</li>
+            <li>Psychosexual evaluations</li>
+            <li>PTSD and trauma-related evaluations</li>
+            <li>Assessment of emotional distress or psychological harm (civil cases)</li>
+            <li>Independent Medical (Psychological) Examinations (IME) – civil matters</li>
+            <li>Mitigation and pre-sentencing evaluations</li>
+            <li>Evaluations for developmental disorders (e.g., autism, intellectual disability)</li>
+            <li>Diagnostic evaluations &amp; treatment recommendations</li>
+            <li>Family court evaluations</li>
+            <li>Certificate of merit evaluations</li>
+            <li>Risk assessments</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Expert Witness Testimony</h3>
+          <p>
+            Dr. Lizarazo offers expert testimony in both criminal and civil court proceedings, providing clear, evidence-based opinions and explanations to assist the court in understanding psychological findings.
+          </p>
+        </article>
+        <article>
+          <h3>Case Consultation</h3>
+          <p>
+            Consultation services are available for attorneys and organizations seeking guidance on psychological issues relevant to their cases, including case strategy and review of psychological reports.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="fees-heading">
+      <header>
+        <h2 id="fees-heading">Fees & Payment</h2>
+      </header>
+      <p>
+        Fees will be determined by the type of service provided and the time required to complete the evaluation. For the most up-to-date information regarding fees, please <a href="contact.html">contact Dr. Lizarazo</a> directly.
+      </p>
+    </section>
+
+    <footer style="margin-top: 4rem; text-align: center; padding: 2rem 1rem; background-color: #f3f4f6; border-top: 1px solid #e5e7eb;">
+      <nav aria-label="Footer navigation" style="margin-bottom: 0.5rem;">
+        <a href="index.html">Home</a> |
+        <a href="schedule.html">Schedule</a>
+      </nav>
+      <div style="margin: 1rem 0;">
+        <a href="https://linkedin.com/in/drjanesmith" class="social-icon" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin fa-lg"></i>
+        </a>
+        <a href="mailto:zlizarazo@bop.gov" class="social-icon" title="Email" style="margin: 0 0.5rem;">
+          <i class="fas fa-envelope fa-lg"></i>
+        </a>
+      </div>
+      <p style="font-size: 0.9rem; color: #6b7280;">
+        © <span id="currentYear"></span> Dr. Zully Lizarazo All rights reserved.
+      </p>
+    </footer>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
